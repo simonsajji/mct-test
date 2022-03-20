@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kumbh+Sans:wght@300;400;500&family=Raleway&display=swap');
+
+body {
+	background: #141414;
+	color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 0.5rem; 
+	width: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+	border-radius: 0.5rem; 
+  }
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	overflow-y: hidden;
+	margin-bottom:5rem;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+	
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+.flexed{
+
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+
+.h{
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: lighter;
+	/* font-family: 'Raleway', sans-serif; */
+	font-size: 2.1rem;
+	color:rgb(173, 173, 161);
+}
+
+.hspan{
+	color:rgb(199, 36, 36);
+	display: inline;
+	font-weight: bolder;
+}
+
+.homedisplay{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:1rem;
+	width:100%;
+	height:100%;
+	/* padding:1.5rem; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+
+}
+
+.icontainer{
+
+	display: flex;
+	width:15rem;
+	height:20rem;
+	flex-direction: column;
+	margin-bottom: 1rem;;
+	transition: all 0.3s ease-in-out;
+	
+	/* flex-wrap: wrap; */
+
+}
+
+.icontainer > .imgcont{
+
+	/* width: 100%; */
+	flex:2;
+	width:100%;
+	height:15rem;
+
+}
+
+.imgcont img{
+	width:100%;
+	height: 100%;
+}
+.icontainer > .tit{
+
+	/* width: 100%; */
+	flex:0.5;
+	color:rgb(219, 159, 125);
+	text-align: center;
+
+}
+.icontainer > .y{
+
+	/* width: 100%; */
+	flex:1;
+	color:rgb(170, 166, 166);
+	text-align: center;
+
+
+}
+
+.imgcont:hover{
+	width:19rem;
+	height:18rem;
+	transition: all 0.5s ease-in-out;
+
+	
+}
+.icontainer:hover{
+	width:19rem;
+	height:25rem;
+	transition: all 0.5s ease-in-out;
+	z-index: 100;
+	font-size: 1.3rem;
+	
+
+	
+}
+
+.goback{
+	font-size: 1.4rem;
+	padding:0rem;
+	border:0;
+	outline:0;
+	color:rgb(42, 81, 139);
+	background-color: transparent;
+	border: 0;
+	border-bottom: 0.02rem solid rgb(0, 94, 148);
+	display: block;
+	font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.goback:hover{
+	color:rgb(38, 100, 194);
+	font-size: 1.5rem;
+	transition: all 0.24s ease-in-out;
+}
+
+.details{
+	padding:2rem;
+	width:97%;
+	height:40rem;
+	box-sizing: border-box;
+	
+}
+
+.flex-container{
+	display: flex;
+	width:100%;
+	flex-direction: row;
+	height:95%;
+	margin-top: 1rem;
+
+}
+
+.flex-container .left_content{
+	/* flex:1; */
+	width:25rem;
+	height:35rem;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+.flex-container .right_content{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: left;
+	gap:1rem;
+
+}
+
+.right_content .title{
+	/* flex: 1; */
+	font-size: 2.4rem;
+	color: whitesmoke;
+	text-align: left;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: bolder;
+}
+.right_content .year{
+	/* flex: 1; */
+	font-size: 1rem;
+	color: rgb(151, 144, 149);
+	text-align: left;
+}
+
+.right_content .year span{
+	color:rgb(161, 160, 160);
+	margin-left:4%;
+}
+
+.left_content img{
+
+	width: 90%;
+	height:99%;
+
+}
+
+.right_content .synopsis{
+	/* flex:1; */
+	color:rgb(76, 104, 122);
+	width:80%;
+	font-size: 1rem;
+}
+
+.btns{
+	padding:1rem 0.3rem;
+	display: flex;
+	flex-direction: row;
+	gap:0.5rem
+
+	
+}
+
+.btns .hd{
+	background-color: rgb(0, 102, 255);
+	color:white;
+	padding:0.4rem;
+	border: 0;
+	border-radius: 0.2rem;
+	font-size: 0.98rem;
+}
+.btns .rating{
+	background-color: rgb(179, 132, 15);
+	color:black;
+	font-size: 1rem;
+	padding:0.4rem;
+	font-weight: bolder;
+	border: 0;
+	border-radius: 0.2rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.genre_item{
+
+	margin:0.2rem;
+	color: rgb(107, 100, 114);
+	border:0;
+	border-radius: 0.4rem;
+	background-color: rgba(37, 37, 37,0.4);
+	padding: 0.3rem;
+	font-family: 'Raleway', sans-serif;
+}
